@@ -56,8 +56,9 @@ public class Main {
     public static void printList(LinkedList<Student> list){
         try (FileWriter writer = new FileWriter("Students.txt");){
             for(int i = 0; i< list.size(); i++){
-                writer.write("Name: " + list.get(i).getName() + " Address: " + list.get(i).getAddress() + " GPA: " + list.get(i).getGPA() + "\n");
+                writer.write("Name: " + list.get(i).getName() + ", Address: " + list.get(i).getAddress() + ", GPA: " + list.get(i).getGPA() + "\n");
             }
+            System.out.println("File written successfully.");
         }
         catch (IOException e){
             System.out.println("Failed to write file.");
