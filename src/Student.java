@@ -15,4 +15,16 @@ public class Student {
         this.GPA = GPA;
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public double getGPA(){
+        return GPA;
+    }
+
 }
